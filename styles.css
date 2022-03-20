@@ -1,0 +1,162 @@
+body {
+    background-color: #13315C;
+    color: #eef4ed;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+}
+
+h1, h2 {
+    color: #eef4ed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.125rem;
+    border-bottom-color: #eef4ed;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-weight: Bold;
+}
+h2 {
+    text-align: left;
+    font-size: 0.9rem;
+    border-bottom: none;
+}
+
+.picture {
+    background: #42a4ff;
+    box-shadow: 30px 40px 20px rgba(0, 0, 0, 0.25);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    object-fit: contain;
+    max-height: 320px;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 20rem;
+
+}
+
+p {
+    color: #eef4ed;
+    text-align: left;
+    font-size: 0.75rem;
+    display: block;
+}
+
+aside {
+    top: 0px;
+    background-color: #0b2545;
+    text-align: center;
+    box-shadow: 0.5rem 0.5rem 1rem rgb(0 0 0 / 20%);
+    word-break: break-word;
+    box-sizing: border-box;
+    display: block;
+    justify-content: center;
+}
+@media only screen and (min-width: 768px) {
+    .col-md-2 {
+        overflow-y: auto;
+        position: sticky;
+    }
+}
+
+.icon {
+    color: #8da9c4;
+}
+
+a {
+    color: #eef4ed;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+    margin: 10px 10px;
+}
+
+ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+ul li a i {
+    width: 100%;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 45%;
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.collapsible {
+    background-color: #0b2545;
+    color: #eef4ed;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible:hover {
+    background-color: #134074;
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #13315c;
+}
+
+ol li{
+    list-style-type: none;
+    color: #eef4ed;
+}

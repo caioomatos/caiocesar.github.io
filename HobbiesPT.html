@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/40bcd64ac4.js" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Hobbies</title>
+    </head>
+    <body style="width: 100%;">
+        <div class = "container-fluid">
+            <div class = "row">
+                <aside class= "col-md-2 overflow-auto">
+                    <h2 style="border-bottom: none; text-align: center; justify-content: center; font-size: 1.125rem;">
+                    <a href="/indexPT.html" style="text-decoration: none; color: #eef4ed;">
+                        Caio César Barros Matos
+                    </a>
+                    </h2>
+                    <img src="IMG_0025.jpg" class="picture img-fluid" alt = "Caio César">
+                    <ul class="fa-xl">
+                        <li><a id="email" href= "mailto:caiocesarbmatos@gmail.com" title= "Email" class="fa icon">
+                            <i class="fa-solid fa-envelope icon"></i>
+                        </a></li>
+                        <li><a id="icon" href="https://www.linkedin.com/in/caiocesarmatos/" title= "LinkedIn">
+                            <i class="fa-brands fa-linkedin icon"></i>
+                        </a></li>
+                        <li><a id="icon2" href="https://github.com/caioomatos" title= "GitHub">
+                            <i class="fa-brands fa-github icon"></i>
+                        </a></li>
+                        <li><a id="tel" href="tel:+351933654865" title= "Phone">
+                            <i class="fa-solid fa-phone icon"></i>
+                        </a></li>
+                    </ul>
+                    <h2>
+                        <a href="/SobreMim.html" style="text-decoration: none; color: #eef4ed;">
+                        Sobre Mim
+                        </a>
+                    </h2>
+                    <h2>
+                        <a href="/ExtracurricularPT.html" style="text-decoration: none; color: #eef4ed;">
+                        Extracurricular
+                        </a>
+                    </h2>
+                    <h2>
+                        <a href="/HobbiesPT.html" style="text-decoration: none; color: #eef4ed;">
+                        Hobbies
+                        </a>
+                    </h2>
+                </aside>
+                <main class = "col-md" style="background-color: #13315C;">
+                    <h1 class = "header">
+                        <a href="/HobbiesPT.html" style="text-decoration: none; color: #eef4ed;">
+                        Hobbies
+                        </a>
+                        <button class="btn btn-light me-md-1 btn-sm" type="button" style="background-color: #13315C; font-weight: Bold;">
+                        <a href="/Hobbies.html" style="text-decoration: none;">
+                        EN
+                        </a>
+                        </button>
+                    </h1>
+                    <h2>
+                    Quando não estou estudando ou assistindo filmes como qualquer outra pessoa, gosto de produzir música eletrônica. Antes da pandemia eu trabalhava como DJ na minha cidade natal, hoje não estou tocando no momento, mas pretendo o quanto antes comprar outra controladora e estou tentando melhorar minhas produções musicais. Aqui você pode ouvir meu último remix!
+                    </h2>
+                    <div class="container" style="padding-top: 56.25%;">
+                       <iframe class="responsive-iframe" style="max-height: 534px; max-width: 950px;" src="https://www.youtube.com/embed/M5B31yMFQxM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <script>
+        document.getElementById("email").addEventListener("mouseover", mouseOveremail);
+        document.getElementById("email").addEventListener("mouseout", mouseOutemail);
+        function mouseOveremail() {
+            var a;
+            a = document.getElementById("email");
+            a.innerHTML = "&#xf658;";
+            a.style.color = "#8da9c4";
+            a.classList.add("fa-beat");
+        }
+        function mouseOutemail() {
+            var a;
+            a = document.getElementById("email");
+            a.innerHTML = "&#xf0e0;";
+            a.classList.remove("fa-beat");
+        }
+
+        document.getElementById("icon").addEventListener("mouseover", mouseOverfade);
+        document.getElementById("icon").addEventListener("mouseout", mouseOutfade);
+        function mouseOverfade() {
+            document.getElementById("icon").classList.add("fa-beat-fade");
+        }
+        function mouseOutfade() {
+            document.getElementById("icon").classList.remove("fa-beat-fade");
+        }
+
+        document.getElementById("icon2").addEventListener("mouseover", mouseOverfade2);
+        document.getElementById("icon2").addEventListener("mouseout", mouseOutfade2);
+        function mouseOverfade2() {
+            document.getElementById("icon2").classList.add("fa-beat-fade");
+        }
+        function mouseOutfade2() {
+            document.getElementById("icon2").classList.remove("fa-beat-fade");
+        }
+
+        document.getElementById("tel").addEventListener("mouseover", mouseOvershake);
+        document.getElementById("tel").addEventListener("mouseout", mouseOutshake);
+        function mouseOvershake() {
+            document.getElementById("tel").classList.add("fa-shake");
+        }
+        function mouseOutshake() {
+            document.getElementById("tel").classList.remove("fa-shake");
+        }
+        </script>
+    </body>
+</html>
